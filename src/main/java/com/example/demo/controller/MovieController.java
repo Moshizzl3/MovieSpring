@@ -63,6 +63,7 @@ public class MovieController {
   @GetMapping("/howManySequals")
   @ResponseBody
   public String getSequals(@RequestParam(value = "g1") String g1, @RequestParam(value = "g2") String g2) {
+    // example input: http://localhost:8080/howManySequals?g1=Action&g2=Comedy
     return MOVIE_SERVICE.getLongestAvgByInput(g1, g2);
   }
 
