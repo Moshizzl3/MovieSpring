@@ -56,9 +56,7 @@ public class MovieRepository {
     List<Movie> result = new ArrayList<>();
     Connection connection = DBManager.getConnection();
     String sqlStatement =
-        "SELECT * FROM movies \n" +
-            "ORDER BY popularity DESC\n" +
-            "LIMIT 10";
+        "SELECT * FROM (SELECT * FROM movies ORDER BY RAND () LIMIT 10) as random ORDER BY popularity DESC";
     PreparedStatement preparedStatement;
     ResultSet resultSet;
 
