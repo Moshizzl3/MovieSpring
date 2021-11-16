@@ -1,3 +1,6 @@
+
+Build Status: ![Build Status](https://github.com/Moshizzl3/MovieSpring/workflows/JavaM/build.svg)
+
 # MovieSpring
 MovieSpring is a webapplikation that allows users to do get info about movies.
 
