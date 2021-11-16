@@ -8,7 +8,7 @@ class MovieServiceTest {
 
   @Test
   void getFirstMovie() {
-    String name = "tesgt";
+    String name = "test";
     assertEquals("test", name);
   }
 
